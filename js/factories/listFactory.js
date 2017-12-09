@@ -15,9 +15,11 @@ angular.module('app').factory('listFactory', function () {
 		}
 
 	];
+
 	service.getLists = function  () {
 		return lists;
 	};
+
 	service.addList = function (listName) {
 	  lists.push({
 		id: _.uniqueId('list_'),
